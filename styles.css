@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+main {
+  /* padding-top: 4rem; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+/* HEADER SECTION */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4rem;
+  background-color: #2e5a3f;
+  z-index: 3;
+}
+
+main {
+  padding-top: 4rem; /* Відступ для компенсації фіксованого хедера */
+}
+
+/* Відступ для секцій, щоб врахувати висоту фіксованого хедера */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+  height: 100%;
+}
+
+nav a {
+  align-self: center;
+  z-index: 10;
+}
+
+nav .nav-logo {
+  height: 3rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  color: #e8e8e8;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #b8975b;
+  cursor: pointer;
+}
+
+/* BANNER SECTION */
+
+.banner-section {
+  position: relative;
+  /* height: 100vh; */
+  background-color: #d4a76a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem 5rem;
+  /* gap: 16rem; */
+}
+
+.banner-section img {
+  width: 40%;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.banner-section .banner-text {
+  width: 50%;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #e8e8e8;
+}
+
+.banner-section .banner-text span {
+  font-size: 3rem;
+  color: #3a2e2a;
+  font-family: "Playfair Display", serif;
+  font-weight: 800;
+}
+
+/* RESULTS SECTION */
+
+.results-section {
+  position: relative; /* Встановлюємо контекст для абсолютного позиціонування */
+  padding: 3rem 5rem;
+  background-color: #d4a76a;
+  color: white;
+  text-align: center;
+}
+
+.results-section h2 {
+  position: absolute;
+  font-size: 3rem;
+  top: 0; /* Розташовуємо заголовок у верхній частині секції */
+  left: 0; /* Початок від лівого краю документа */
+  width: 100%; /* Заголовок займає всю ширину документа */
+  background-color: #2e5a3f;
+  color: white;
+  padding: 3rem 0; /* Внутрішні відступи для заголовка */
+  text-align: center;
+  z-index: 1; /* Забезпечує, що заголовок буде над іншими елементами */
+}
+
+.results-cards {
+  margin-top: 12rem; /* Додаємо відступ, щоб картки не перекривали заголовок */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.results-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  background-color: #2e5a3f;
+  border-radius: 1rem;
+  border: #b8975b 1rem solid;
+  justify-content: center;
+}
+
+.results-card h3 {
+  font-size: 5rem;
+  font-weight: 800;
+  color: #b8975b;
+  /* padding: 4rem 4rem 16rem 4rem; */
+  padding: 4rem 4rem 0 4rem;
+}
+
+.results-card p {
+  width: 80%;
+  margin-top: 12rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #2e5a3f;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+footer h2 {
+  margin-bottom: 1rem;
+}
+
+footer li {
+  list-style: none;
+  font-size: 1.2rem;
+}

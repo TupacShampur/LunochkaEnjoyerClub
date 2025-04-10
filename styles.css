@@ -69,6 +69,11 @@ nav ul {
   list-style: none;
 }
 
+nav ul li {
+  display: inline-block;
+  text-align: center;
+}
+
 nav ul li a {
   font-family: "Montserrat", sans-serif;
   color: #e8e8e8;
@@ -346,7 +351,7 @@ footer li {
 @media only screen and (max-width: 545px) {
   footer h2 {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   footer li {
